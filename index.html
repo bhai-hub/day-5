@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOIR — Fine Jewellery for Medical Professionals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;0,6..96,800;1,6..96,400&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Editorial Panel (right side, horizontal alignment) -->
+  <header class="top-nav" aria-label="Primary navigation">
+    <nav class="top-nav-links">
+      <button type="button" class="nav-link" data-nav="collection">Collection</button>
+      <button type="button" class="nav-link" data-nav="bespoke">Bespoke</button>
+      <button type="button" class="nav-link" data-nav="who">Who is Noir?</button>
+    </nav>
+  </header>
+
+  <!-- Smooth Horizontal Editorial Track -->
+  <main class="horizontal-viewport" id="viewport">
+    <div class="horizontal-track" id="track">
+      <!-- Continuous Editorial Architectural Hairline (from reference video) -->
+      <div class="editorial-track-hairline" aria-hidden="true"></div>
+
+      <!-- SLIDE 1: HOME PAGE -->
+      <section class="slide slide-home" data-slide="0" aria-label="NOIR Home">
+        <div class="home-left">
+          <div
+            class="model-stage model-stage--home"
+            data-macro-target="home"
+            data-origin="40% 30%"
+            tabindex="0"
+            role="button"
+            aria-label="Inspect model jewelry in macro detail"
+          >
+            <img
+              src="assets/model-home.jpg"
+              alt="Female physician wearing NOIR teardrop earrings and fine pendant necklace"
+              class="model-img model-img--base"
+              draggable="false"
+            />
+            <img
+              src="assets/macro-home.jpg"
+              alt="Macro view of teardrop diamond earring worn by physician"
+              class="model-img model-img--macro"
+              draggable="false"
+            />
+            <span class="macro-exit-cue" aria-hidden="true">Close Macro ×</span>
+          </div>
+        </div>
+
+        <div class="home-right">
+          <div class="home-brand-block" id="homeBrandBlock">
+            <p class="brand-eyebrow">THE ATELIER</p>
+
+            <!-- High-contrast TAN Pearl-proportioned vector wordmark + accessible heading -->
+            <h1 class="brand-heading" aria-label="NOIR">
+              <span class="sr-only">NOIR</span>
+              <svg
+                class="brand-wordmark-svg"
+                viewBox="0 0 600 132"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+              >
+                <!-- N: thin hairline left stem, sweeping thick diagonal, thin hairline right stem, flared bracket serifs -->
+                <path
+                  d="M14 114 C24 114 27 110 27 101 L27 31 C27 22 24 18 14 18 L14 15 L44 15 L120 96 L120 31 C120 22 117 18 107 18 L107 15 L137 15 L137 18 C127 18 124 22 124 31 L124 117 L119 117 L31 24 L31 101 C31 110 34 114 44 114 L44 117 L14 117 Z"
+                  fill="currentColor"
+                />
+                <!-- O: high-contrast vertical oval with voluptuous outer curves & hairline poles -->
+                <path
+                  d="M236 13 C272 13 296 36 296 66 C296 96 272 119 236 119 C200 119 176 96 176 66 C176 36 200 13 236 13 Z M236 17 C211 17 195 37 195 66 C195 95 211 115 236 115 C261 115 277 95 277 66 C277 37 261 17 236 17 Z"
+                  fill="currentColor"
+                />
+                <!-- I: crisp high-contrast stem with delicate flared horizontal serifs -->
+                <path
+                  d="M342 15 L380 15 L380 18 C370 18 368 22 368 31 L368 101 C368 110 370 114 380 114 L380 117 L342 117 L342 114 C352 114 354 110 354 101 L354 31 C354 22 352 18 342 18 Z"
+                  fill="currentColor"
+                />
+                <!-- R: strong stem, soft rounded bowl, expressive gracefully sweeping curved leg -->
+                <path
+                  d="M428 15 L483 15 C511 15 527 28 527 46 C527 63 513 73 490 75 C504 79 514 89 523 102 C530 111 536 115 546 114 L546 117 L522 117 C511 117 506 112 497 98 C488 84 480 76 467 76 L455 76 L455 101 C455 110 458 114 468 114 L468 117 L428 117 L428 114 C438 114 441 110 441 101 L441 31 C441 22 438 18 428 18 Z M455 19 L455 72 L478 72 C499 72 511 63 511 46 C511 29 499 19 478 19 Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </h1>
+
+            <button type="button" class="find-yours-cue" id="findYoursBtn">
+              <span class="find-yours-glow" aria-hidden="true"></span>
+              <span class="find-yours-label">FIND YOURS</span>
+              <span class="find-yours-arrow" aria-hidden="true">
+                <span class="arrow-line"></span>
+                <span class="arrow-head"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 2: SECOND FRAME — THE BLACK COLLECTION -->
+      <section class="slide slide-showcase" data-slide="1" aria-label="The Black Collection">
+        <!-- Left Part: Frameless floating piece (360° rotatable & zoom on hover) -->
+        <div class="showcase-piece-col">
+          <div class="floating-piece-wrap" data-piece-wrap="bracelet" title="Hover to zoom & inspect 360° — drag to rotate">
+            <canvas class="floating-piece-canvas" id="canvasBracelet" aria-label="360 degree interactive Black Diamond Platinum Bracelet"></canvas>
+            <div class="floating-ground-shadow" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Center Part (leaning slightly right): Classic editorial serif stacked title -->
+        <div class="showcase-title-col">
+          <div class="showcase-title-inner">
+            <h2 class="piece-title">
+              <span>The Black</span>
+              <span>Collection</span>
+            </h2>
+            <div class="piece-view-switch" aria-label="Switch right display mode">
+              <button type="button" class="view-pill is-active" data-mode="model" data-slide-target="1">Portrait</button>
+              <span class="view-sep" aria-hidden="true">/</span>
+              <button type="button" class="view-pill" data-mode="macro-ring" data-slide-target="1">Signature Ring</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Part: Full-body physician model (zooms on hover; zooms to macro on click) -->
+        <div class="showcase-model-col">
+          <div
+            class="model-stage model-stage--showcase"
+            data-macro-target="black"
+            data-origin="41% 54%"
+            tabindex="0"
+            role="button"
+            aria-label="Click to zoom into bracelet macro angle"
+          >
+            <img
+              src="assets/model-black.jpg"
+              alt="Physician in tailored white lab coat and black scrubs wearing black-diamond bracelets"
+              class="model-img model-img--base model-img--white-bg"
+              draggable="false"
+            />
+            <img
+              src="assets/macro-black.jpg"
+              alt="Macro angle of black-diamond pavé and platinum bracelet on physician's wrist"
+              class="model-img model-img--macro"
+              draggable="false"
+            />
+            <span class="macro-exit-cue" aria-hidden="true">Close Macro ×</span>
+          </div>
+
+          <!-- Alternate right-side floating macro cushion ring (honoring Page 6 & Page 11) -->
+          <div class="alt-ring-stage" aria-hidden="true">
+            <img
+              src="assets/ring-cushion-macro.jpg"
+              alt="Floating macro cushion-cut black diamond platinum halo ring"
+              class="alt-ring-img"
+              draggable="false"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 3: THIRD FRAME — THE PEARL COLLECTION -->
+      <section class="slide slide-showcase" data-slide="2" aria-label="The Pearl Collection">
+        <!-- Left Part: Frameless floating Platinum & Pearl piece (360° rotatable & zoom on hover) -->
+        <div class="showcase-piece-col">
+          <div class="floating-piece-wrap" data-piece-wrap="pearl" title="Hover to zoom & inspect 360° — drag to rotate">
+            <canvas class="floating-piece-canvas" id="canvasPearl" aria-label="360 degree interactive Platinum and South Sea Pearl Drop"></canvas>
+            <div class="floating-ground-shadow" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <!-- Center Part (leaning slightly right): Classic editorial serif stacked title -->
+        <div class="showcase-title-col">
+          <div class="showcase-title-inner">
+            <h2 class="piece-title">
+              <span>The Pearl</span>
+              <span>Collection</span>
+            </h2>
+            <div class="piece-view-switch" aria-label="Switch right display mode">
+              <button type="button" class="view-pill is-active" data-mode="model" data-slide-target="2">Portrait</button>
+              <span class="view-sep" aria-hidden="true">/</span>
+              <button type="button" class="view-pill" data-mode="macro-ring" data-slide-target="2">Signature Ring</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Part: Crisp monochrome physician wearing pearl drop earrings -->
+        <div class="showcase-model-col">
+          <div
+            class="model-stage model-stage--showcase"
+            data-macro-target="pearl"
+            data-origin="57% 21%"
+            tabindex="0"
+            role="button"
+            aria-label="Click to zoom into pearl earring macro angle"
+          >
+            <img
+              src="assets/model-pearl.jpg"
+              alt="Physician in tailored white lab coat and grey scrubs wearing sculpted pearl earrings"
+              class="model-img model-img--base model-img--white-bg"
+              draggable="false"
+            />
+            <img
+              src="assets/macro-pearl.jpg"
+              alt="Macro angle of sculpted platinum and South Sea pearl drop earring"
+              class="model-img model-img--macro"
+              draggable="false"
+            />
+            <span class="macro-exit-cue" aria-hidden="true">Close Macro ×</span>
+          </div>
+
+          <!-- Alternate right-side floating macro cushion ring (honoring Page 6 & Page 11) -->
+          <div class="alt-ring-stage" aria-hidden="true">
+            <img
+              src="assets/ring-cushion-macro.jpg"
+              alt="Floating macro cushion-cut black diamond platinum halo ring"
+              class="alt-ring-img"
+              draggable="false"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 4: LAST PAGE — CLOSING FOOTER PANEL -->
+      <section class="slide slide-footer" data-slide="3" aria-label="Join the Guild Footer">
+        <div class="footer-contrast-block">
+          <div class="guild-container">
+            <p class="guild-eyebrow">PRIVATE COMMUNITY</p>
+            <h2 class="guild-heading">Join the Guild</h2>
+            <p class="guild-copy">
+              Reserved for physicians, surgeons, residents, and medical professionals.
+              Enter your email for private invitations and bespoke releases.
+            </p>
+
+            <form class="guild-form" id="guildForm" novalidate>
+              <div class="guild-input-row">
+                <input
+                  type="email"
+                  id="guildEmail"
+                  class="guild-email-input"
+                  placeholder="Enter your email address"
+                  autocomplete="email"
+                  required
+                  aria-label="Email address for Guild private invitations"
+                />
+                <button type="submit" class="guild-submit-btn" aria-label="Submit email">
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+              <p class="guild-feedback" id="guildFeedback" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+
+        <footer class="footer-bottom-bar">
+          <div class="footer-bar-inner">
+            <span class="footer-copyright">© 2026 NOIR. All Rights Reserved.</span>
+            <div class="footer-legal-links">
+              <button type="button" class="legal-btn" data-legal="terms">Terms &amp; Conditions</button>
+              <button type="button" class="legal-btn" data-legal="privacy">Privacy Policy</button>
+            </div>
+          </div>
+        </footer>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Four Minimal Pagination Dots Centered at Very Bottom Edge -->
+  <nav class="pagination-dots" id="paginationDots" aria-label="Slide navigation">
+    <button type="button" class="dot is-active" data-index="0" aria-label="Home Page"></button>
+    <button type="button" class="dot" data-index="1" aria-label="The Black Collection"></button>
+    <button type="button" class="dot" data-index="2" aria-label="The Pearl Collection"></button>
+    <button type="button" class="dot" data-index="3" aria-label="Join the Guild"></button>
+  </nav>
+
+  <!-- BESPOKE ATELIER DRAWER (Showcases Page 11 Floating Cushion Ring Macro + 360° Ring Inspection) -->
+  <aside class="editorial-overlay" id="bespokeOverlay" aria-hidden="true" role="dialog" aria-label="Bespoke Atelier">
+    <button type="button" class="overlay-close" data-close-overlay aria-label="Close Bespoke View">Close ×</button>
+    <div class="bespoke-layout">
+      <div class="bespoke-copy-col">
+        <p class="overlay-eyebrow">BESPOKE ATELIER</p>
+        <h2 class="overlay-serif-title">The Signature<br />Black Cushion</h2>
+        <p class="overlay-body">
+          Precision-engineered in surgical-grade 950 platinum with flush micro-pavé settings
+          calibrated to glide seamlessly beneath clinical gloves without snagging.
+          Commission bespoke engravings, custom stone cuts, and fitted profiles tailored to your practice.
+        </p>
+        <div class="bespoke-controls">
+          <button type="button" class="bespoke-mode-btn is-active" data-ring-view="macro">Macro Photograph</button>
+          <button type="button" class="bespoke-mode-btn" data-ring-view="3d">360° Inspection</button>
+        </div>
+        <button type="button" class="bespoke-cta" id="bespokeToGuild">Request Private Consultation →</button>
+      </div>
+
+      <div class="bespoke-ring-col">
+        <div class="bespoke-ring-frame" id="bespokeRingFrame">
+          <img
+            src="assets/ring-cushion-macro.jpg"
+            alt="Floating macro shot of signature cushion-cut black diamond and pavé halo ring"
+            class="bespoke-macro-img"
+            draggable="false"
+          />
+          <canvas class="bespoke-ring-canvas" id="canvasCushionRing" aria-label="360 degree Cushion Ring"></canvas>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- WHO IS NOIR? MONOGRAPH OVERLAY -->
+  <aside class="editorial-overlay" id="whoOverlay" aria-hidden="true" role="dialog" aria-label="Who is Noir?">
+    <button type="button" class="overlay-close" data-close-overlay aria-label="Close Who is Noir">Close ×</button>
+    <div class="who-layout">
+      <p class="overlay-eyebrow">WHO IS NOIR?</p>
+      <h2 class="overlay-serif-title">Crafted for Those<br />Who Hold Steady Hands</h2>
+      <div class="who-columns">
+        <p>
+          NOIR is a modern black-and-white fine jewellery maison conceived exclusively for
+          physicians, surgeons, residents, and medical professionals. Where traditional luxury
+          houses design for stillness, NOIR designs for twelve-hour rounds, sterile suites,
+          and quiet moments beyond the hospital doors.
+        </p>
+        <p>
+          Every link, bezel, and South Sea pearl mount is cast in non-reactive 950 platinum
+          and carbonado black diamonds—balanced with low-profile galleries, smooth interior
+          bevels, and enduring monochrome poise.
+        </p>
+      </div>
+      <button type="button" class="bespoke-cta" id="whoToCollection">Explore the Collection →</button>
+    </div>
+  </aside>
+
+  <!-- LEGAL MODAL (Terms & Conditions / Privacy) -->
+  <aside class="editorial-overlay editorial-overlay--compact" id="legalOverlay" aria-hidden="true" role="dialog" aria-label="Legal details">
+    <button type="button" class="overlay-close" data-close-overlay aria-label="Close legal notice">Close ×</button>
+    <div class="who-layout">
+      <p class="overlay-eyebrow" id="legalEyebrow">NOIR ATELIER</p>
+      <h2 class="overlay-serif-title" id="legalTitle">Terms &amp; Conditions</h2>
+      <p class="overlay-body" id="legalBody"></p>
+    </div>
+  </aside>
+
+  <script src="js/jewelry3d.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
